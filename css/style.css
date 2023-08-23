@@ -1,0 +1,260 @@
+@charset "utf-8";
+/* CSS Document */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+body{
+    font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif"  ; font-size: 16px; color: #666666; margin: 0
+}
+header{
+    width: 100%; height: 60px; background-color: rgba(255,255,255,0.80); box-shadow: 5px 5px 5px lightgray; z-index: 100; position: fixed; left: 0;top: 0
+}
+.logo{
+    padding-top: 12px
+}
+.menu{
+    padding-top: 20px
+}
+.menu ul{
+    padding: 0; margin: 0; list-style: none; display: flex
+}
+.menu ul li a{
+    padding: 8px 20px; border-radius: 20px
+}
+.menu ul li a:hover{
+    background-color: palevioletred; color: white
+}
+.menu ul li .menu-item.active{
+    background-color: red; color: white
+}
+/*section*/
+#home{
+    width: 100%; min-height: 1000px; padding-top: 100px; background-color: antiquewhite; background: url("../img/avatar.png"),url("../img/textured-mulberry-paper.jpg"); background-repeat: no-repeat; background-position: right bottom, left top
+}
+#about{
+    width: 100%; min-height: 1000px; padding-top: 100px; background: url("../img/15207024_8.jpg")
+}
+.year{
+    padding-left: 10px; letter-spacing: 20px
+}
+.so{
+    font-size: 120px; color: black;font-weight: bold
+}
+#skill{
+    width: 100%; min-height: 1000px; padding-top: 100px;background: url("../img/15207024_8.jpg")
+}
+/* Style the tab */
+#skill .tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  display: flex; border-radius: 10px
+}
+
+/* Style the buttons inside the tab */
+#skill .tab button {
+  width: 50%; border border-radius: 10px; background-color: none; 
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+#skill .tab button:hover {
+  background-color:#00ACD9;color: white
+}
+
+/* Create an active/current tablink class */
+#skill .tab button.active {
+  background-color:deepskyblue; color: white
+}
+
+/* Style the tab content */
+#skill .tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border-top: none;
+}
+.progress{
+    width: 100%; height: 8px; background-color: #BBBBBB; border-radius: 10px; margin-bottom: 15px; overflow: hidden
+}
+.bar{
+    height: 8px; border-radius: 10px; 
+}
+#services{
+    width: 100%; min-height: 1000px; padding-top: 100px; background: url("../img/15207024_8.jpg")
+}
+.service{
+    width: 100%; height: 150px; display: flex
+}
+.service-icon{
+    width: 180px; height: 150px; border: 1px solid #00ACD9; display: flex; justify-content: center; align-items: center
+}
+.service-icon i{
+    font-size: 40px; color: #00ACD9 ; transition: all 0.6s
+}
+.service-icon img{
+    width: 40px; transition: all 0.6s
+}
+.service-text{
+    width: 100%; height: 150px; padding: 15px; transition: all 0.6s
+}
+.service:hover .service-icon i{
+    font-size: 60px
+}
+.service:hover .service-icon img{
+    width: 60px
+}
+.service:hover .service-text{
+    background-color: #00ACD9; color: white
+}
+#projects{
+    width: 100%; min-height: 1000px; padding-top: 100px;background: url("../img/15207024_8.jpg")
+}
+/* Style the tab */
+#projects .tab {
+  
+}
+
+/* Style the buttons inside the tab */
+#projects .tab button {
+  background: none;
+  border-bottom: 2px solid white;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 3px 0; margin-left: 25px;
+  transition: 0.3s;
+  font-size: 18px;
+}
+
+/* Change background color of buttons on hover */
+#projects .tab button:hover {
+  color: mediumpurple; border-bottom: 2px solid mediumpurple
+}
+
+/* Create an active/current tablink class */
+#projects .tab button.active {
+  color: rebeccapurple; border-bottom: 2px solid rebeccapurple
+}
+
+/* Style the tab content */
+#projects .tabcontent2 {
+  display: none;
+  padding: 6px 12px;
+  
+  border-top: none;
+}
+.box{
+    display: flex;justify-content: space-between; align-items: center
+}
+#projects .owl-nav { position:absolute; left:0px; top:30%; width:100%; }
+#projects .owl-nav [class*='owl-'] {
+	font-size:35px;  color: black;width: 40px;
+}
+
+#projects .owl-nav .owl-next{ position:absolute; right:-4%;}
+#projects .owl-nav .owl-prev{ position:absolute; left:-4%;}
+#projects .owl-nav [class*='owl-']:hover {
+      background:none;
+      color:mediumpurple;
+      text-decoration: none; }
+
+#testimonial{
+    width: 100%; min-height: 1000px; padding-top: 100px;background: url("../img/15207024_8.jpg")
+}
+#testimonial .client{
+    text-align: center; display: flex; flex-direction: column; justify-content: center;align-items: center; padding: 10px 50px
+}
+#testimonial .client img{
+    width: 100px;height: 100px; border-radius: 50%
+}
+#testimonial .vien{
+    width: 100px;height: 100px;border-radius: 50%;border: 1px solid rgba(48,48,255,1.00); padding: 7px
+}
+#testimonial .owl-nav { position:absolute; left:0px; top:40%; width:100%; }
+#testimonial .owl-nav [class*='owl-'] {
+	font-size:35px; /*background:rgba(255,255,255,.5);border:1px solid #fff; */ color: #888888
+}
+
+#testimonial .owl-nav .owl-next{ position:absolute; right:5%;}
+#testimonial .owl-nav .owl-prev{ position:absolute; left:5%;}
+#testimonial .owl-nav [class*='owl-']:hover {
+      background:none;border: none;
+      color:blue;
+      text-decoration: none; }
+#contact{
+    width: 100%; min-height: 1000px; padding-top: 100px; background: url("../img/15207024_8.jpg") 
+}
+#contact .vien-chan{
+    padding-bottom: 15px;font-size: 25px; color: dodgerblue; border-bottom: 1px solid #00ACD9
+}
+#btn-back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+}
+.tieu-de{
+    color: #1400FA;font-size: 40px
+}
+.text-xanh{
+    color: #00AECF
+}
+.text-den{
+    color: black
+}
+.bo-goc{
+    border-radius: 10px 
+}
+.text-do{
+    color: red
+}
+.text-vang{
+	color:#FAD900
+}
+.rotate-scale-up {
+	-webkit-animation: rotate-scale-up 1s linear 2 both;
+	        animation: rotate-scale-up 1s linear 2 both;
+}
+/* ----------------------------------------------
+ * Generated by Animista on 2023-8-17 14:2:59
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation rotate-scale-up
+ * ----------------------------------------
+ */
+@-webkit-keyframes rotate-scale-up {
+  0% {
+    -webkit-transform: scale(1) rotateZ(0);
+            transform: scale(1) rotateZ(0);
+  }
+  50% {
+    -webkit-transform: scale(2) rotateZ(180deg);
+            transform: scale(2) rotateZ(180deg);
+  }
+  100% {
+    -webkit-transform: scale(1) rotateZ(360deg);
+            transform: scale(1) rotateZ(360deg);
+  }
+}
+@keyframes rotate-scale-up {
+  0% {
+    -webkit-transform: scale(1) rotateZ(0);
+            transform: scale(1) rotateZ(0);
+  }
+  50% {
+    -webkit-transform: scale(2) rotateZ(180deg);
+            transform: scale(2) rotateZ(180deg);
+  }
+  100% {
+    -webkit-transform: scale(1) rotateZ(360deg);
+            transform: scale(1) rotateZ(360deg);
+  }
+}
+
